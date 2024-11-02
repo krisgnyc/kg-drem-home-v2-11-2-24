@@ -1,0 +1,27 @@
+{
+  // shadcn/ui configuration schema
+  "$schema": "https://ui.shadcn.com/schema.json",
+  
+  // Component styling
+  "style": "default",     // Use default style preset
+  "rsc": true,           // Enable React Server Components
+  "tsx": true,           // Use TypeScript with JSX
+  
+  // Tailwind CSS configuration
+  "tailwind": {
+    "config": "tailwind.config.ts",  // Tailwind config file
+    "css": "app/globals.css",        // Global CSS file
+    "baseColor": "neutral",          // Base color scheme
+    "cssVariables": true,            // Use CSS variables
+    "prefix": ""                     // No class prefix
+  },
+  
+  // Import aliases
+  "aliases": {
+    "components": "@/components",  // Components directory
+    "utils": "@/lib/utils",       // Utilities
+    "ui": "@/components/ui",      // UI components
+    "lib": "@/lib",               // Library code
+    "hooks": "@/hooks"            // React hooks
+  }
+}
